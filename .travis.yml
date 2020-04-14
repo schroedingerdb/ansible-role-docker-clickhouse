@@ -29,10 +29,10 @@ install:
 
 script:
   #1 test default container
-  #- ansible-playbook tests/test.yml
-  #- "echo 'SELECT 1' | curl 'http://localhost:8123/' --data-binary @-"
-  #- docker rm -f $(docker ps -a -q)
-  #- sudo rm -r /tmp/docker-clickhouse-*
+  - ansible-playbook tests/test.yml
+  - "echo 'SELECT 1' | curl 'http://localhost:8123/' --data-binary @-"
+  - docker rm -f $(docker ps -a -q)
+  - sudo rm -r /tmp/docker-clickhouse-*
 
   #2 test config changes
   - ansible-playbook tests/test-config.yml
