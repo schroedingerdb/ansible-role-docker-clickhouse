@@ -1,5 +1,5 @@
 galaxy_info:
-  author: Jens Schröder (Searchmetrics GmbH)
+  author: Jens Schröder
   description: Role to run a ClickHouse Server docker container
 
   license: MIT
@@ -9,12 +9,8 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - xenial
-        - trusty
-    - name: MacOSX
-      versions:
-        - "10.11"
-        - "10.12"
+        - bionic
+        - xenial       
 
   galaxy_tags:
     - clickhouse

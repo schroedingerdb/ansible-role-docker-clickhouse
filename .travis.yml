@@ -5,11 +5,11 @@ python: "2.7"
 matrix:
   include:
     - os: linux
-      dist: trusty
+      dist: bionic
       sudo: true
     - os: linux
       dist: xenial
-      sudo: true
+      sudo: true      
 
 # Use the new container infrastructure
 sudo: true
@@ -28,7 +28,7 @@ install:
   - sudo pip install docker-py
 
   # Check ansible version
-  - ansible --version
+  - ansible --version  
 
 script:
   #1 test default container
