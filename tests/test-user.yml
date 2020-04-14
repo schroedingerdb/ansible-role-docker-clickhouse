@@ -2,6 +2,7 @@
 - hosts: localhost
   remote_user: root
   vars:
+    - clickhouse_docker_published_ports: [] # Published ports are discarded when using host network mode
     - clickhouse_docker_user_profiles:
         default:
           max_memory_usage: 10000000000
