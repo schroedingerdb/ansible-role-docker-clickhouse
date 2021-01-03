@@ -414,6 +414,7 @@ A good example to run local config tests.
 MIT
 
 ##  Author Information
+This project is forked from [searchmetrics/ansible-role-docker-clickhouse](https://github.com/searchmetrics/ansible-role-docker-clickhouse)
 
 This role was created by [Jens Schröder](https://github.com/jens-schroeder-sm)\
 Role owner is [Searchmetrics GmbH](https://www.searchmetrics.com)
